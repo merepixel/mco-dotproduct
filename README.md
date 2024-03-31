@@ -36,7 +36,7 @@ We verified the correctness of the C kernel by ensuring consistent output across
 ### Debug Mode Outputs
 
 #### $2^{20}$
-![Sample Screenshot](https://github.com/merepixel/mco-dotproduct/raw/master/imgs/sample%20screenshot.png)
+![Sample](/imgs/sample.png)
 
 #### $2^{24}$
 
