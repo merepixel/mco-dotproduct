@@ -19,7 +19,10 @@ Output: store the result in memory location sdot. Display the result for all ver
 ## Comparison and Analysis of Execution times
 
 ### Debug Mode
-
+| Debug Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
+| --- | --- | --- | --- |
+| C | # | # | # |
+| ASM | # | # | # |
 
 ### Release Mode
 
