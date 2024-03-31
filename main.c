@@ -6,11 +6,15 @@ extern double dotProductx64(size_t n, double* result, double* arr1, double* arr2
 
 void dotProduct(size_t n, double* result, double* arr1, double* arr2) {
     int i;
+    float ans = 0.0;
+
     for (i = 0; i < n; i++) {
-        result[i] = 0;
-        result[i] += arr1[i] * arr2[i];
+        ans = ans + (arr1[i] * arr2[i]);
     }
+
+    *result = ans;
 }
+
 
 int main() {
     const size_t N = 1 << 20;
