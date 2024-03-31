@@ -25,4 +25,29 @@ Output: store the result in memory location sdot. Display the result for all ver
 | ASM | # | # | # |
 
 ### Release Mode
+| Release Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
+| --- | --- | --- | --- |
+| C | # | # | # |
+| ASM | # | # | # |
+
+## Screenshots with Correctness Checking
+We verified the correctness of the C kernel by ensuring consistent output across all runs. Similarly, for the ASM kernel, we compared each output to the corresponding C kernel output to ensure accuracy.
+
+### Debug Mode Outputs
+
+#### $2^{20}$
+![2^20 Debug Mode output](/imgs/sample screenshot.png) 
+
+#### $2^{24}$
+
+#### $2^{30}$
+
+### Release Mode Outputs
+
+#### $2^{20}$
+
+#### $2^{24}$
+
+#### $2^{30}$
+
 
