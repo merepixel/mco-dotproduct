@@ -20,7 +20,7 @@ Output: store the result in memory location sdot. Display the result for all ver
 
 In Debug Mode, Assembly Language (ASM) runs significantly faster than C, with speed advantages of around 48.57%, 50.47%, and 53.89% across array sizes (20, 24, 30). ASM's low-level nature enables direct optimization within the code, while C's Debug Mode disables optimizations and adds overhead for debugging features, resulting in slower performance.
 
-In Release Mode, the outputs are closer to each other...
+In Release Mode, the outputs are closer to each other across array sizes 20 and 24 as C now has optimizations in place. However, an evident gap presents itself when it comes to array size 30. This could be resultant of the hardware and the code utilized.
 
 | Debug Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
 | --- | --- | --- | --- |
