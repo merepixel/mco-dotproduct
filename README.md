@@ -56,6 +56,6 @@ We verified the correctness of the C kernel by ensuring consistent output across
 ![Screenshot Debug 24](/imgs/Release24.png)
 
 #### $2^{30}$
-![Screenshot Debug 30](/imgs/Release20.PNG)
+![Screenshot Debug 30](/imgs/Release30.PNG)
 
 
