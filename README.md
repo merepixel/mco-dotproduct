@@ -1,6 +1,6 @@
 # LBYARCH x86 to C Interface Programming Project
 
-## Program Specifications:
+## Program Specifications
 Write the kernel in (1) C program and (2) an x86-64 assembly language. The kernel is to perform a dot product between vector A and vector B and place the result in sdot.
 - Required to use functional scalar SIMD registers
 - Required to use functional scalar SIMD floating-point instructions
@@ -18,17 +18,18 @@ Output: store the result in memory location sdot. Display the result for all ver
 
 ## Comparison and Analysis of Execution times
 
-### Debug Mode
+In Debug Mode, ASM runs around 50% faster than ASM across all specified array sizes. ASM, being a low-level language, lacks such overhead as it performs optimizations directly within the code rather than during compilation. Meanwhile C's debugging mode disables optimizations and enables debug features, adding overhead. In Release Mode, C outperforms ASM in terms of speed because it activates speed optimizations while disabling debug features, reducing overhead. 
+
+
 | Debug Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
 | --- | --- | --- | --- |
-| C | # | # | # |
-| ASM | # | # | # |
+| C | 2.33 | 38.77 | 25640.73 |
+| ASM | 1.20 | 19.20 | 11824.07 |
 
-### Release Mode
 | Release Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
 | --- | --- | --- | --- |
-| C | # | # | # |
-| ASM | # | # | # |
+| C | 1.17 | 21.6 | # |
+| ASM | 1.27 | 20.63 | # |
 
 ## Screenshots with Correctness Checking
 We verified the correctness of the C kernel by ensuring consistent output across all runs. Similarly, for the ASM kernel, we compared each output to the corresponding C kernel output to ensure accuracy.
@@ -36,18 +37,24 @@ We verified the correctness of the C kernel by ensuring consistent output across
 ### Debug Mode Outputs
 
 #### $2^{20}$
-![Sample](/imgs/sample.png)
+![Screenshot Debug 20](/imgs/Debug20.PNG)
 
 #### $2^{24}$
+![Screenshot Debug 24](/imgs/Debug24.PNG)
 
 #### $2^{30}$
+![Screenshot Debug 30](/imgs/Debug30.PNG)
+
 
 ### Release Mode Outputs
 
 #### $2^{20}$
+![Screenshot Debug 20](/imgs/Release20.PNG)
 
 #### $2^{24}$
+![Screenshot Debug 24](/imgs/Release20.PNG)
 
 #### $2^{30}$
+![Screenshot Debug 30](/imgs/Release20.PNG)
 
 
