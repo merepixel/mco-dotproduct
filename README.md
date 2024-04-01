@@ -18,10 +18,6 @@ Output: store the result in memory location sdot. Display the result for all ver
 
 ## Comparison and Analysis of Execution times
 
-In Debug Mode, Assembly Language (ASM) runs significantly faster than C, with speed advantages of around 48.57%, 50.47%, and 53.89% across array sizes (20, 24, 30). ASM's low-level nature enables direct optimization within the code, while C's Debug Mode disables optimizations and adds overhead for debugging features, resulting in slower performance.
-
-In Release Mode, the outputs are closer to each other across array sizes 20 and 24 as C now has optimizations in place. However, an evident gap presents itself when it comes to array size 30. This could be resultant of the hardware and the code utilized.
-
 | Debug Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
 | --- | --- | --- | --- |
 | C | 2.33 | 38.77 | 25640.73 |
@@ -31,6 +27,10 @@ In Release Mode, the outputs are closer to each other across array sizes 20 and 
 | --- | --- | --- | --- |
 | C | 1.9 | 21.97 | 12392.83 |
 | ASM | 2.63 | 27.27 | 1035.23 |
+
+In Debug Mode, Assembly Language (ASM) runs significantly faster than C, with speed advantages of around 48.57%, 50.47%, and 53.89% across different array sizes of 20, 24, and 30 respectively. ASM's low-level nature enables direct optimization within the code, while C's Debug Mode disables optimizations and adds overhead for debugging features, resulting in slower performance.
+
+In Release Mode, C slightly faster than C, with speed advantages of around 27.85% and 19.44% for array sizes 20 and 24 respectively because C now has optimizations in place. However, an evident gap presents itself when it comes array size 30, with ASM faster by 91.65%. This discrepancy could be resultant of various factors such as ASM's finely tuned optimizations for specific hardware, inherent algorithmic efficiency, and the ability to directly address compiler limitations which surpass C's optimization capabilities, particularly for larger array sizes like 30.
 
 ## Screenshots with Correctness Checking
 We verified the correctness of the C kernel by ensuring consistent output across all runs. Similarly, for the ASM kernel, we compared each output to the corresponding C kernel output to ensure accuracy.
