@@ -29,8 +29,8 @@ In Release Mode, the outputs are closer to each other...
 
 | Release Mode | $2^{20}$ | $2^{24}$ | $2^{30}$ |
 | --- | --- | --- | --- |
-| C | 1.9 | 21.97 | # |
-| ASM | 2.63 | 27.27 | # |
+| C | 1.9 | 21.97 | 12392.83 |
+| ASM | 2.63 | 27.27 | 1035.23 |
 
 ## Screenshots with Correctness Checking
 We verified the correctness of the C kernel by ensuring consistent output across all runs. Similarly, for the ASM kernel, we compared each output to the corresponding C kernel output to ensure accuracy.
